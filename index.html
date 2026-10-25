@@ -4,50 +4,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Website</title>
+  <title>Claim Your Prize!</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: linear-gradient(135deg, #dbeafe, #e9d5ff);
-      color: #1e293b;
       min-height: 100vh;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
     }
 
     .card {
       background: white;
       padding: 40px 25px;
-      border-radius: 20px;
-      max-width: 500px;
-      width: 85%;
-      box-shadow: 0 10px 30px #00000015;
+      margin: 20px;
+      border-radius: 24px;
+      box-shadow: 0 12px 35px #0002;
+      max-width: 420px;
     }
 
-    h1 {
-      color: #6d28d9;
+    h1 { color: #e63946; }
+
+    p {
+      color: #555;
+      line-height: 1.6;
     }
 
     button {
-      background: #6d28d9;
+      background: #e63946;
       color: white;
       border: none;
-      padding: 12px 24px;
-      border-radius: 10px;
+      padding: 16px 28px;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
       cursor: pointer;
-      font-size: 16px;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.06);
+      background: #c1121f;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <h1>Welcome to My Website!</h1>
-    <p>This website is hosted for free on GitHub Pages.</p>
-    <button onclick="alert('Thanks for visiting!')">
-      Click Me
+    <h1>🎁 Congratulations!</h1>
+    <p>You've been specially selected for an exclusive surprise.</p>
+    <p>Click below to reveal your prize! 👀</p>
+
+    <button onclick="window.location.href='https://www.youtube.com/watch?v=QDia3e12czc'">
+      🎉 Reveal My Prize
     </button>
   </div>
 </body>
